@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">    <title>My Contact</title>
+    
+    <style>
+        /* Custom Styles */
+        .container {
+            margin-top: 50px;
+        }
+
+        .center-align {
+            text-align: center;
+        }
+
+        #filterInput {
+            margin-bottom: 20px;
+        }
+
+        #names {
+            margin-bottom: 20px;
+        }
+        ul.collection {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">
+            My Contacts
+        </h1>
+        <input type="text" id="filterInput" class="form-control" placeholder="Search names...">
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>A</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Abe</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Adam</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Alan</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Anna</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>B</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Beth</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Bill</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Bob</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Brad</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>C</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Carrie</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Cathy</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Courtney</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Charlie</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>D</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">David</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Diana</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Daniel</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Dorothy</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>E</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Emma</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Ethan</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Ella</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Elijah</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>F</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Frank</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Fiona</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Frederick</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Faith</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>G</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">George</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Grace</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Gabriel</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Giselle</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>H</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Henry</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Hannah</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Harrison</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Harper</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>I</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Isaac</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Isabella</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Ian</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Ivy</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>J</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Jacob</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Julia</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Jackson</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Jasmine</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>K</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Kevin</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Kayla</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Kyle</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Katherine</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>L</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Liam</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Lily</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Leo</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Lucy</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>M</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Mason</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Mia</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Matthew</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Madison</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>N</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Noah</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Nora</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Nathan</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Natalie</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>O</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Oliver</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Olivia</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Oscar</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Ophelia</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>P</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Peter</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Penelope</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Patrick</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Paige</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>Q</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Quinn</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Quincy</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Queenie</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Quentin</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>R</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Ryan</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Rachel</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Robert</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Rebecca</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>S</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Samuel</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Sophia</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Sebastian</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Sarah</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>T</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Thomas</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Taylor</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Theodore</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Tiffany</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>U</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Uma</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Uriel</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Ulysses</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Unity</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>V</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Victor</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Victoria</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Vincent</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Valerie</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>W</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">William</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Wendy</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Wyatt</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Willow</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>X</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Xavier</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Xanthe</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Xander</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Xena</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>Y</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Yusuf</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Yara</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Yosef</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Yasmine</a>
+            </li>
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h5>Z</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Zachary</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Zara</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Zoe</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Zane</a>
+            </li>
+        </ul>
+    </div>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script src="script.js"></script>
